@@ -1,0 +1,12 @@
+{
+  "quien_es_mi_novia": {
+    "phrase": "quien es mi novia",
+    "type": "speak",
+    "text": "Se llama Julieta Siles"
+  },
+  "musica_romantica": {
+    "phrase": "ponme musica romantica",
+    "type": "play",
+    "url": "https://www.youtube.com/watch?v=YkuCkRtoZ1k"
+  }
+}
