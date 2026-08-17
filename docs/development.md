@@ -1,5 +1,17 @@
 # Desarrollo
 
+## Stack técnico propuesto
+
+Decidido para etapas futuras, todavía **sin instalar ni configurar**:
+
+- **Frontend**: React + TypeScript + Vite.
+- **Estilos**: CSS Modules (o Tailwind, a confirmar al implementar `src/styles`), con soporte para Dark/Light Mode vía `src/styles/themes`.
+- **Backend**: Node.js + TypeScript (Express o Fastify, a confirmar) sobre la estructura ya creada en `server/src/{routes,controllers,services,config}`.
+- **Persistencia inicial**: almacenamiento local simple (archivo/JSON) detrás de la abstracción de `src/storage`, reemplazable después por una base de datos real.
+- **Comunicación frontend↔backend**: REST vía `src/api`, documentado en [api.md](api.md).
+
+Esta elección no implica ningún cambio en la arquitectura descrita en [architecture.md](architecture.md) — solo fija con qué tecnología se implementará cada capa cuando llegue esa etapa.
+
 ## Reglas de la arquitectura
 
 1. `src/automations`, `src/triggers`, `src/conditions`, `src/actions` y `src/devices` no deben importar nada de `src/integrations`.
